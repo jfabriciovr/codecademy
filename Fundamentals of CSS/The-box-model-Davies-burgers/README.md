@@ -6,8 +6,8 @@ Davie’s burgers
 
 First with just HTML:
 
-![Just HTML](webpage_just_html.png)
+![Just HTML](./webpage-snapshots/webpage-snapshot-davies-burgers-v1.png)
 
 After applying CSS:
 
-![With CSS](webpage_with_css.png)
+![With CSS](./webpage-snapshots/webpage-snapshot-davies-burgers-v2.png)
