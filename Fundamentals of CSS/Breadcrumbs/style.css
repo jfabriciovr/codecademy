@@ -1,0 +1,19 @@
+.breadcrumb {
+  background-color: rgb(193, 222, 222);
+  width: fit-content;
+  padding: 10px;
+}
+.breadcrumb > li {
+  display: inline;
+}
+.breadcrumb li + li::before {
+  padding: 10px;
+  content: ">";
+}
+.breadcrumb a {
+  color: rgb(66, 105, 41);
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  color: rgb(255, 255, 255);
+}
