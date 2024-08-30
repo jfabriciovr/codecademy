@@ -1,3 +1,5 @@
+/* Breadcrumb 1 */
+
 .breadcrumb {
   background-color: rgb(193, 222, 222);
   width: fit-content;
@@ -16,4 +18,75 @@
 }
 .breadcrumb a:hover {
   color: rgb(255, 255, 255);
+}
+
+/* Breadcrumb 2 */
+.breadcrumb2 a {
+  background-color: #d7263d;
+  color: #ffffff;
+  display: block;
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 16px;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.breadcrumb2 ul {
+  padding: 0px;
+  margin: 10px 0px;
+}
+.breadcrumb2 li {
+  margin: 0px;
+  list-style: none;
+}
+.breadcrumb2 a {
+  background-color: inherit;
+}
+
+.breadcrumb2 {
+  text-align: left;
+}
+.breadcrumb2 li {
+  float: left;
+}
+
+.breadcrumb2 a {
+  color: #fff;
+  background: darkcyan;
+  text-decoration: none;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 0 5px;
+}
+
+.breadcrumb2 a::before,
+.breadcrumb2 a::after {
+  content: "";
+  position: absolute;
+  border-color: darkcyan;
+  border-style: solid;
+  border-width: 15px 5px;
+}
+.breadcrumb2 a::before {
+  left: -10px;
+  border-left-color: transparent;
+}
+.breadcrumb2 a::after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: darkcyan;
+}
+.breadcrumb2 a:hover {
+  background-color: blue;
+}
+.breadcrumb2 a:hover::before {
+  border-color: blue;
+  border-left-color: transparent;
+}
+.breadcrumb2 a:hover::after {
+  border-left-color: blue;
 }
