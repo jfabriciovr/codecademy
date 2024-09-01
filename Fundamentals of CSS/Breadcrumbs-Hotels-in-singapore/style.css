@@ -2,10 +2,12 @@ body {
   padding: 0;
   margin: 0;
   background-color: #1e1e24;
+  text-align: center;
 }
 
 .jumbotron {
-  background-image: url(https://images.unsplash.com/photo-1444882158336-bcfbd9298309?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://images.unsplash.com/photo-1444882158336-bcfbd9298309?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
   height: 200px;
   background-position: bottom center;
 }
@@ -15,25 +17,25 @@ h1 {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 900;
   margin: 0;
   padding-top: 50px;
 }
 
 h2 {
-  color: #fff;
   font-family: "Catamaran", sans-serif;
+  color: #fff;
   margin: 0;
   text-align: left;
 }
 
 h3 {
-  color: red;
+  color: #d7263d;
   font-family: "Ruda", sans-serif;
   font-size: 32px;
   margin: 0;
-  /* position: relative; */
+  position: relative;
   text-align: left;
   text-transform: uppercase;
 }
@@ -56,7 +58,6 @@ p {
   margin-top: 20px;
 }
 .hotel-description {
-  border: 1px solid red;
   display: inline-block;
   width: 70%;
 }
@@ -64,8 +65,42 @@ p {
 .book {
   margin-top: 30px;
   width: 100%;
-  border: 1px solid white;
 }
 a {
-  background-color: red;
+  background-color: #d7263d;
+  color: white;
+  display: block;
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 16px;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  padding: 0;
+  margin: 10px 0;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumb a {
+  background-color: inherit;
+  display: inline;
+}
+.breadcrumb {
+  text-align: left;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li + li::before {
+  content: ">";
+  color: white;
 }
