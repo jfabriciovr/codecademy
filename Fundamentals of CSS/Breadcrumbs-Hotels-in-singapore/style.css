@@ -5,6 +5,12 @@ body {
   text-align: center;
 }
 
+main {
+  max-width: 800px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+
 .jumbotron {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://images.unsplash.com/photo-1444882158336-bcfbd9298309?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
@@ -48,7 +54,7 @@ p {
 }
 
 .hotel {
-  border: 1px solid #fff;
+  border: 1px solid rgb(82, 62, 26);
   margin: 60px auto;
   padding: 10px 0 0 0;
   width: 90%;
@@ -65,9 +71,10 @@ p {
 .book {
   margin-top: 30px;
   width: 100%;
+  border-top: 1px solid rgb(82, 62, 26);
 }
 a {
-  background-color: #d7263d;
+  background-color: #560a14;
   color: white;
   display: block;
   font-family: "Pontano Sans", sans-serif;
@@ -125,7 +132,7 @@ li {
 
 .breadcrumb a {
   color: white;
-  background: darkcyan;
+  background: #560a14;
   text-decoration: none;
   position: relative;
   height: 30px;
@@ -140,7 +147,7 @@ li {
 .breadcrumb a::after {
   content: "";
   position: absolute;
-  border-color: darkcyan;
+  border-color: #560a14;
   border-style: solid;
   border-width: 15px 5px;
 }
@@ -153,18 +160,20 @@ li {
 .breadcrumb a::after {
   left: 100%;
   border-color: transparent;
-  border-left-color: darkcyan;
+  border-left-color: #560a14;
 }
 
-.breadcrumb a:hover {
-  background-color: blue;
+.breadcrumb a:hover,
+.book a:hover {
+  background-color: rgb(210, 176, 111);
+  color: black;
 }
 
 .breadcrumb a:hover::before {
-  border-color: blue;
+  border-color: rgb(210, 176, 111);
   border-left-color: transparent;
 }
 
 .breadcrumb a:hover::after {
-  border-left-color: blue;
+  border-left-color: rgb(210, 176, 111);
 }
