@@ -1,0 +1,36 @@
+.breadcrumb {
+  text-align: left;
+}
+
+/* BASIC STYLE 
+
+ASIA > SINGAPORE > TOURISM > HOTELS
+
+*/
+/*
+.breadcrumb a {
+  background-color: inherit;
+  display: inline;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+
+.breadcrumb li + li::before {
+  content: ">";
+  color: white;
+}
+*/
+
+/* MORE VISUAL STYLE */
+
+.breadcrumb li {
+  float: left;
+}
+
+.breadcrumb a {
+  color: white;
+  background: darkcyan;
+  text-decoration: none;
+}
