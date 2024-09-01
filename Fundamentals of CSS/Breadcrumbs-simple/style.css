@@ -20,7 +20,7 @@
   color: rgb(255, 255, 255);
 }
 
-/* Breadcrumb 2 */
+/* ************* Breadcrumb 2 ***************** */
 .breadcrumb2 a {
   background-color: #d7263d;
   color: #ffffff;
@@ -89,4 +89,37 @@
 }
 .breadcrumb2 a:hover::after {
   border-left-color: blue;
+}
+
+/* ************* Breadcrumb 3 ***************** */
+
+.breadcrumb3 {
+  margin-top: 30px;
+  margin-left: 0;
+  border: 1px solid;
+}
+.breadcrumb3 > li {
+  display: inline;
+}
+
+.breadcrumb3 a {
+  text-decoration: none;
+  margin-right: 2px;
+  color: black;
+}
+
+.breadcrumb3 li.location + li.location::before {
+  content: "/ ";
+  color: green;
+  font-weight: 900;
+}
+
+.breadcrumb3 li.attribute::before {
+  content: "> ";
+  color: green;
+  font-weight: 600;
+}
+.breadcrumb3 li.attribute::after {
+  content: "*";
+  color: red;
 }
