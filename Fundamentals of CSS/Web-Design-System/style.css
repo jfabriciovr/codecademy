@@ -18,14 +18,16 @@ header {
   padding: 1px 20px;
   position: sticky;
   top: 0;
+  text-align: center;
 }
 
 footer {
-  text-align: right;
-  padding: 0.1rem 20px;
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  width: 100%;
+  text-align: center;
 }
+
 .subtitle {
   font-weight: 300;
 }
