@@ -1,1 +1,7 @@
+img {
+  background-color: black;
+}
 
+main img {
+  width: 100%;
+}
