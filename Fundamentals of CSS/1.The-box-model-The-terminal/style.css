@@ -74,7 +74,7 @@ h2 {
 }
 
 h3 {
-  color: red;
+  color: rgb(0, 0, 0);
   font-size: 26px;
   font-weight: 700;
   padding: 20px 10px;
@@ -87,7 +87,6 @@ p {
   margin-top: 60px;
   padding: 10px 20px;
 }
-/*
 
 .pull-quote {
   margin: 0 auto;
@@ -95,15 +94,15 @@ p {
 }
 
 .byline {
-  border-bottom: 1px solid LightGrey;
-  border-top: 1px solid LightGrey;
-  color: DarkGrey;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  color: darkgray;
   font-size: 14px;
   font-weight: 200;
 }
 
 .share {
-  border: 1px solid LightGrey;
+  border: 1px solid lightgray;
   padding: 40px 0px;
   position: relative;
   text-align: center;
@@ -111,7 +110,7 @@ p {
 }
 
 .share a {
-  background: red;
+  background-color: red;
   border: 1px solid red;
   border-radius: 3px;
   color: white;
@@ -122,8 +121,7 @@ p {
 }
 
 .share a:hover {
-  background: white;
+  background-color: white;
   border: 1px solid red;
   color: red;
 }
-*/
