@@ -16,4 +16,5 @@ This project assumes that you will be able to reproduce the basic HTML and CSS w
 
 ### Final Version
 
-<img title="the summit" alt="the summit" src="./images/img-design-final-ver.jpeg">
+<img title="the summit" alt="the summit" src="./images/img-design-final-ver.jpeg"
+style="width: 100%; height: auto;">
