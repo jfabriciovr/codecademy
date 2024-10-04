@@ -13,3 +13,7 @@ This project assumes that you will be able to reproduce the basic HTML and CSS w
 ### Design Spec
 
 <img title="the summit" alt="the summit" src="./images/img-design-spec-tea-cozy-redline.jpg">
+
+### Final Version
+
+<img title="the summit" alt="the summit" src="./images/img-design-final-ver.jpeg">
