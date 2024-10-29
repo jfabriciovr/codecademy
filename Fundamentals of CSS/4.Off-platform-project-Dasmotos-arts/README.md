@@ -10,5 +10,5 @@ At a high-level, this project will require the following:
 
 <img title="broadway" alt="broadway" src="./images/Dasmoto.png">
 
-My version:
+<h4>My Version</h4>
 <img title="broadway" alt="broadway" src="./images/Dasmoto_ver2.png">
