@@ -1,0 +1,66 @@
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 990px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 3.75rem;
+  background-color: orange;
+}
+
+header .logo-small {
+  display: none;
+}
+
+header .logo-small,
+header .logo-big {
+  flex-grow: 1;
+}
+
+nav li {
+  display: inline;
+  padding-right: 2rem;
+}
+
+nav li:last-child {
+  padding-right: 0;
+}
+
+@media only screen and (max-width: 990px) {
+  header .logo-big {
+    display: none;
+  }
+}
