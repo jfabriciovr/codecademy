@@ -99,9 +99,9 @@ nav a:hover {
 }
 
 .button:hover {
-  background-color: #05a8aa;
+  background-color: #f3dd5f;
   border: 1px solid #05a8aa;
-  color: #fff;
+  color: #151515;
 }
 
 /* Content Nutrition */
@@ -131,4 +131,8 @@ ul.nutrition li {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+ul.nutrition li:hover {
+  background-color: #333;
 }
