@@ -25,7 +25,8 @@ body {
 }
 
 .donate {
-  visibility: hidden;
+  visibility: visible;
+  color: lightgray;
 }
 
 #banner {
