@@ -1,0 +1,61 @@
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+h2 {
+  font-family: Helvetica;
+  font-weight: bold;
+  /* letter-spacing: 2px;*/
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+td,
+th {
+  padding: 5px;
+}
+thead th {
+  border-bottom: 2px solid beige;
+}
+td {
+  text-align: justify;
+  border-left: 2px solid beige;
+}
+
+.general-def {
+  font-style: italic;
+}
+.display-table {
+  margin-top: 30px;
+}
+.positioning-table {
+  margin-top: 30px;
+}
+.cheet {
+  display: inline-block;
+  font-family: monospace;
+  background-color: beige;
+  /* text-transform: uppercase;*/
+}
+.heading {
+  background-color: white;
+}
+
+.arial {
+  font-family: Arial;
+}
+.mono {
+  font-family: Monospace;
+}
+.times {
+  font-family: "Times New Roman";
+}
+.script {
+  font-family: Monospace;
+}
