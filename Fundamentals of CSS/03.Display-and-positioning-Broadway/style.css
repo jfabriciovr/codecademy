@@ -14,6 +14,7 @@ header {
 nav {
   margin: 0;
   padding: 20px 0;
+  text-align: center;
 }
 
 nav li {
@@ -23,6 +24,9 @@ nav li {
   font-size: 12px;
   display: inline-block;
   width: 80px;
+  margin: 0 10px;
+  padding: 10px 0;
+  text-transform: uppercase;
 }
 
 main {
@@ -47,6 +51,7 @@ footer {
   color: #fff;
   padding: 30px 0;
   position: fixed;
+  bottom: 0;
   width: 100%;
 }
 
@@ -152,8 +157,8 @@ footer p {
 }
 @media (max-width: 500px) {
   main h1 {
-    font-size: 50px;
-    padding: 0 40px;
+    font-size: 60px;
+    padding: 80px 0 40px;
   }
   .supporting .col {
     width: 100%;
