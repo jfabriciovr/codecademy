@@ -76,6 +76,10 @@ footer {
   background-color: #deb887;
 }
 
+.color-descrip {
+  font-style: italic;
+}
+
 .font1 {
   font-family: "Source Code Pro", sans-serif;
 }
