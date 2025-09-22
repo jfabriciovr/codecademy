@@ -1,3 +1,4 @@
+/* Universal Styles */
 body {
   margin: 0px;
   background-color: whitesmoke;
@@ -35,21 +36,35 @@ h2 {
 }
 
 /* To Do Section */
+
+.container,
+.row,
+.square {
+  display: flex;
+}
+.week,
+.reminders {
+  display: inline-flex;
+}
+
 .week {
+  flex-grow: 3;
+  flex-direction: column;
 }
 
 .row {
   min-height: 200px;
-  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+/* .day.square*/
 .day {
-  /* .day.square*/
   background-color: steelblue;
 }
 
+/* .task.square */
 .task {
-  /* .task.square */
   background-color: khaki;
   border: 1px solid white;
 }
@@ -58,6 +73,7 @@ h2 {
   width: 125px;
   height: 125px;
   padding: 10px;
+  justify-content: center;
 }
 
 .task-description {
@@ -66,15 +82,21 @@ h2 {
   font-size: 12px;
 }
 
+.row,
+.square {
+  align-items: center;
+}
+
 /* Reminders section */
 
 .reminders {
   background-color: khaki;
+  flex-grow: 2;
 }
 
 .reminders h3 {
-  /* width: 100%;
-    margin: 10px; */
+  width: 100%;
+  margin: 10px;
   color: black;
   line-height: 90px;
   font-size: 24px;
