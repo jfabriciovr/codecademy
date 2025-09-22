@@ -44,8 +44,9 @@ footer {
   justify-content: center;
   gap: 20px;
 }
+
 .color-panel {
-  width: 120px;
+  width: 130px;
   padding: 5px;
   text-align: center;
   border-radius: 5px;
@@ -78,6 +79,7 @@ footer {
 
 .color-descrip {
   font-style: italic;
+  background-color: rgba(253, 253, 253, 0.192);
 }
 
 .font1 {
