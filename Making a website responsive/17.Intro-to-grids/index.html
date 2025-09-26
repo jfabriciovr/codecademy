@@ -11,10 +11,14 @@
             height: 500px;
             width: 500px;
             display: grid;
+            /*
             grid-template-columns: 25% 25% 2fr 1fr;
             grid-template-rows: 200px 200px;
             row-gap: 10px;
             column-gap: 15px;
+            */
+            grid-template: repeat(2, 200px) / repeat(2, 25%) 2fr 1fr;
+            gap: 10px 15px;
         }
 
         .box {
@@ -25,11 +29,15 @@
         }
 
         .a {
+            background-color: rgb(167, 224, 226);
+            /*
             grid-column-start: 1;
             grid-column-end: span 2;
+            
             grid-row-start: 1;
             grid-row-end: 3;
-            background-color: rgb(167, 224, 226);
+*/
+            grid-area: 1 / 1 / 3 / span 2;
 
         }
     </style>
