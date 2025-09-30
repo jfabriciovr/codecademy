@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID - Justify</title>
+
+    <style>
+        .no-justify,
+        .justify-content,
+        .justify-items {
+            display: grid;
+            width: 800px;
+            height: 40px;
+            grid-template-columns: 300px 300px;
+            grid-template-areas: "left right";
+            outline: auto;
+
+        }
+
+        .justify-content {
+            justify-content: center;
+        }
+
+        .justify-items {
+            justify-items: center;
+        }
+
+        .left {
+            background-color: aquamarine;
+        }
+
+        .right {
+            background-color: burlywood;
+        }
+
+        .left,
+        .right {
+            border: 3px solid blue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Grid Justify</h1>
+    <p><strong>grid-template-columns:</strong> 300px 300px</p>
+    <p><strong>grid-template-areas:</strong> "left right"</p>
+    <h2>No Justify</h2>
+    <div class="no-justify">
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+    </div>
+
+    <h2>Justify-content: center </h2>
+    <div class="justify-content">
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+    </div>
+
+    <h2>Justify-items: center </h2>
+    <div class="justify-items">
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+    </div>
+
+
+</body>
+
+</html>
