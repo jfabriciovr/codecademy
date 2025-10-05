@@ -149,7 +149,7 @@ input {
 }
 
 .ellipsis-icon {
-  display: inline-block;
+  /* display: inline-block; */
   float: right;
   margin-right: 15px;
 }
