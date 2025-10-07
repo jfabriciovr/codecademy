@@ -13,7 +13,7 @@ body {
 
 .main {
   height: 30rem;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   background-image: url(https://content.codecademy.com/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png);
   background-size: cover;
   background-position: center;
@@ -56,8 +56,8 @@ li {
 }
 
 .supporting img {
-  height: 10%;
-  width: 10%;
+  width: 5%;
+  padding-right: 5%;
 }
 
 .rating {
@@ -71,6 +71,7 @@ li {
 }
 
 .rating h1 {
+  font-size: 2.5rem; /* equivalent to 40px, 40px/16px = 2.5 */
 }
 
 .gallery img {
@@ -90,6 +91,7 @@ li {
 }
 
 .location img {
+  width: 100%;
 }
 
 footer {
@@ -103,4 +105,10 @@ footer .container {
   justify-content: space-between;
   padding: 5em 0;
   color: white;
+}
+
+@media only screen and (max-width: 960px) {
+  .main {
+    padding-top: 0;
+  }
 }
