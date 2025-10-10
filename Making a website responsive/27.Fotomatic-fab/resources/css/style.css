@@ -1,5 +1,4 @@
 /* Universal Styles */
-
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -7,11 +6,17 @@ html {
 
 .main-content {
   position: relative;
-  top: 5.3125rem;
+  top: 5.3125rem; /* To offset for fixed header */
 }
 
 .center {
   text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
 }
 
 /* Header */
@@ -19,43 +24,82 @@ header {
   position: fixed;
   z-index: 100;
   width: 100%;
-  border-bottom: solid 1px #c6c1c1;
-  background-color: wheat;
-  height: 5.3125rem;
-  display: flex;
-  align-items: center;
+  background-color: rgb(186, 109, 109, 0.5);
+  /* border-bottom: solid 1px #c6c1c1; 
+  background-color: white;
+  */
 }
 
 header .content {
   display: flex;
-  /* padding: 1.875rem; */
-}
-
-header nav ul {
-  display: flex;
-  background-color: rgb(221, 255, 0);
-}
-
-nav li {
-  padding-left: 3.5rem;
-}
-
-nav a {
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #4a4a4a;
-  vertical-align: bottom;
+  align-items: center;
+  padding: 1.875rem;
 }
 
 header .logo {
   flex: 1;
 }
 
-header .icon {
-  width: 1rem;
-  padding-left: 0.75rem;
+header nav ul {
+  display: flex;
+}
+nav li {
+  padding-left: 3.5rem;
 }
 
-header .mobile {
-  display: none;
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
 }
+
+nav .button {
+  padding: 0.1875rem 0.5rem;
+  background-color: #9dc20b;
+  line-height: 1.6;
+  color: wheat;
+}
+
+/*
+header .content {
+  display: flex;
+  width: 100%;
+}
+
+header .logo {
+  flex-grow: 1;
+  background-color: rgb(0, 255, 255, 0.5);
+  font-family: "Roboto Mono";
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+header .icon {
+  width: 1rem;
+}
+
+header .desktop ul,
+header .mobile ul {
+  display: flex;
+  list-style: none;
+  outline: auto;
+}
+
+.main-content .banner {
+  background-image: url(../images/banner-landingpage.jpg);
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+}
+
+#sign-up-cta .content {
+  background-color: #9dc20b;
+  color: white;
+}
+*/
