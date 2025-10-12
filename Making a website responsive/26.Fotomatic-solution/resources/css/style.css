@@ -196,10 +196,12 @@ header .mobile {
   }
 
   #sign-up-cta {
-    position: static;
-    width: auto;
-    height: auto;
-    background-color: transparent;
+    /* position: static; */
+    /* width: 70%; */
+    /* height: auto; */
+    /* background-color: transparent; */
+    height: 25%;
+    background-color: #9dc20b;
     border: none;
   }
 
@@ -223,6 +225,10 @@ header .mobile {
 @media only screen and (max-width: 600px) {
   #sign-up-section {
     height: 20rem;
+  }
+
+  #sign-up-cta {
+    height: 20%;
   }
 
   #sign-up-cta h1 {
