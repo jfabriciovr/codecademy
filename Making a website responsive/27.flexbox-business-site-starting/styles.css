@@ -5,12 +5,33 @@ html {
   font-size: 16px;
 }
 
-ul {
+header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  height: 5rem;
+  background-color: hsl(33, 24%, 91%);
+  background: linear-gradient(
+    to left top,
+    rgb(255, 255, 255),
+    rgb(244, 228, 198)
+  );
 }
 
-li {
-  list-style: none;
-  padding: 1rem;
+header .logo {
+  height: 80%;
+}
+
+nav {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 3rem;
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: gray;
 }
