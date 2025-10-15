@@ -3,35 +3,19 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-
-  height: 5rem;
-  background-color: hsl(33, 24%, 91%);
-  background: linear-gradient(
-    to left top,
-    rgb(255, 255, 255),
-    rgb(244, 228, 198)
-  );
+body {
 }
-
-header .logo {
-  height: 80%;
+header img {
+  width: 100%;
 }
-
-nav {
-  display: flex;
-  /* flex-wrap: wrap; */
-  gap: 3rem;
-  margin-right: 1rem;
+#logo {
+  position: absolute;
+  width: 5rem;
 }
-
-nav a {
-  text-decoration: none;
-  color: gray;
+#slogan {
+  color: brown;
+  font-style: italic;
 }
