@@ -7,15 +7,37 @@ html {
 }
 
 body {
+  max-width: 500px;
 }
-header img {
+header {
+  background-image: url(./images/hanin-abouzeid-sHu1uwmZgug-unsplash.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 600px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-items: flex-end;
+}
+
+#logo {
+  width: 20%;
+  filter: invert();
+}
+
+#slogan {
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: cadetblue;
   width: 100%;
 }
-#logo {
-  position: absolute;
-  width: 5rem;
+
+.team {
+  display: flex;
 }
-#slogan {
-  color: brown;
-  font-style: italic;
+
+.team img {
+  width: 50%;
 }
