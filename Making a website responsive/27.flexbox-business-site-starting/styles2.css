@@ -57,10 +57,10 @@ header {
   filter: saturate(30%);
 }
 #team-member1 {
-  border-radius: 70px 0 0 10px;
+  border-radius: 140px 0 0 10px;
 }
 #team-member2 {
-  border-radius: 0 10px 70px 0;
+  border-radius: 0 10px 140px 0;
 }
 
 .mission {
@@ -80,6 +80,10 @@ footer {
   margin: 5rem auto;
   font-size: 0.8rem;
   line-height: 0.5;
+}
+
+#logo:hover {
+  filter: contrast();
 }
 
 @media only screen and (max-width: 600px) {
@@ -108,5 +112,11 @@ footer {
   }
   .team img {
     width: 14rem;
+  }
+  #team-member1 {
+    border-radius: 140px 10px 0 0;
+  }
+  #team-member2 {
+    border-radius: 0 0 140px 10px;
   }
 }
