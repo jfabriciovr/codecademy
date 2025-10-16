@@ -1,3 +1,6 @@
+* {
+  /* outline: auto; */
+}
 html {
   font-size: 16px;
 }
@@ -8,6 +11,7 @@ body {
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-width: 25rem;
+  background-color: rgb(191, 199, 166);
 }
 
 header {
@@ -29,16 +33,28 @@ header {
 }
 
 .team,
-.team-members {
+.team-members,
+.products {
   display: flex;
   justify-content: center;
+  /* outline: auto; */
 }
-
-.team-members {
+.products {
+  justify-content: space-evenly;
+  margin: auto;
+}
+.products img {
+  height: 10rem;
+}
+.team-members,
+.products,
+.mission {
   max-width: 50rem;
 }
 .team img {
-  width: 50%;
+  width: 18rem;
+  filter: sepia(50%);
+  filter: saturate(30%);
 }
 #team-member1 {
   border-radius: 70px 0 0 10px;
@@ -47,11 +63,50 @@ header {
   border-radius: 0 10px 70px 0;
 }
 
+.mission {
+  width: 30rem;
+  margin: auto;
+  padding: 1.5rem;
+}
+.mission p {
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  width: 20rem;
+  margin: 5rem auto;
+  font-size: 0.8rem;
+  line-height: 0.5;
+}
+
 @media only screen and (max-width: 600px) {
   .team-members {
     flex-direction: column;
     align-items: center;
-    max-width: 43.75rem;
-    min-width: 43.75rem;
+    min-width: 35rem;
+  }
+  .mission {
+    width: 20rem;
+  }
+  .products {
+    flex-wrap: wrap;
+    width: 17rem;
+    row-gap: 1rem;
+  }
+  .products img {
+    width: 8rem;
+    height: 8rem;
+  }
+  #slogan {
+    font-size: 1.5rem;
+  }
+  #logo {
+    width: 17rem;
+  }
+  .team img {
+    width: 14rem;
   }
 }
