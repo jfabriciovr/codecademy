@@ -1,7 +1,9 @@
 * {
   /* outline: auto; */
 }
+
 html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
 }
 
@@ -9,7 +11,6 @@ body {
   margin: 1rem 2rem;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-width: 25rem;
   background-color: rgb(191, 199, 166);
 }
@@ -27,9 +28,9 @@ header {
 }
 
 #slogan {
-  font-size: 2rem;
-  font-weight: 300;
-  /* background-color: cadetblue; */
+  font-size: 2.3rem;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
 }
 
 .team,
@@ -37,7 +38,6 @@ header {
 .products {
   display: flex;
   justify-content: center;
-  /* outline: auto; */
 }
 .products {
   justify-content: space-evenly;
@@ -52,9 +52,9 @@ header {
   max-width: 50rem;
 }
 .team img {
-  width: 18rem;
+  width: 15rem;
   filter: sepia(50%);
-  filter: saturate(30%);
+  filter: saturate(5%);
 }
 #team-member1 {
   border-radius: 140px 0 0 10px;
@@ -64,15 +64,16 @@ header {
 }
 
 .mission,
-.team-description {
+.team-description,
+.conclusion {
   width: 30rem;
   margin: auto;
   padding: 1.5rem;
 }
 .description {
   text-align: center;
-  font-size: 1rem;
-  font-style: italic;
+  font-size: 1.4rem;
+  /* font-style: italic; */
 }
 
 footer {
@@ -83,8 +84,19 @@ footer {
   line-height: 0.5;
 }
 
-#logo:hover {
-  filter: contrast();
+footer a {
+  text-decoration: none;
+  color: rgb(80, 122, 84);
+}
+
+.products img:hover {
+  /* filter: drop-shadow(5px 5px 5px rgb(114, 28, 77)) invert(100%); */
+  filter: invert(100%);
+}
+
+#team-member1:hover,
+#team-member2:hover {
+  filter: blur(100%);
 }
 
 @media only screen and (max-width: 600px) {
@@ -93,7 +105,9 @@ footer {
     align-items: center;
     min-width: 35rem;
   }
-  .mission {
+  .mission,
+  .team-description,
+  .conclusion {
     width: 20rem;
   }
   .products {
@@ -106,7 +120,7 @@ footer {
     height: 8rem;
   }
   #slogan {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   #logo {
     width: 17rem;
