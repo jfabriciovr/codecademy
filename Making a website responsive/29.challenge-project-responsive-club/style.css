@@ -8,6 +8,7 @@ html {
 }
 body {
   filter: grayscale(60%);
+  background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -42,6 +43,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .carousel img {
   width: 20rem;
 }
@@ -92,4 +94,19 @@ header {
 footer {
   padding-top: 3rem;
   font-size: 0.875rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .carousel img {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 14px;
+  }
+  .carousel img {
+    width: 20rem;
+  }
 }
