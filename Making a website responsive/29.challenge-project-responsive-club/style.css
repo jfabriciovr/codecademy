@@ -1,12 +1,13 @@
-* {
-  /* outline: auto; */
-}
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+body {
+  filter: grayscale(60%);
 }
 
 header {
@@ -14,18 +15,25 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+
+  /* background-image: linear-gradient(
+      rgba(14, 14, 95, 0.5),
+      rgba(162, 100, 12, 0.5)
+    ),
+    url(./images/books_background.png); */
+
   background-image: linear-gradient(
       rgba(14, 14, 95, 0.5),
       rgba(162, 100, 12, 0.5)
     ),
-    url(./images/books_background.png);
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  color: white;
+    url(./images/books_in_shadows.jpg);
 
-  padding-left: 5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(223, 220, 220);
+  font-size: larger;
 }
 
 .slogan {
@@ -45,14 +53,13 @@ header {
 }
 
 .opinnions {
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
-  text-align: center;
-
-  margin: 2rem 10rem;
+  width: 80%;
+  margin: 1rem auto;
 }
 
 .opinnions img {
@@ -65,7 +72,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
+  justify-content: center;
+  height: 5rem;
 }
 
 .join-us button {
@@ -74,13 +82,20 @@ header {
   background-color: rgb(228, 236, 233);
   border-radius: 10px;
   border: none;
+  font-size: 1rem;
 }
 
 .join-us button:hover {
   background-color: rgb(184, 242, 220);
+  filter: invert();
 }
 
 .join-us button:active {
-  background-color: black;
-  color: white;
+  background-color: rgb(48, 47, 47);
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  padding-top: 3rem;
+  font-size: 0.875rem;
 }
