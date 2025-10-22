@@ -17,12 +17,6 @@ header {
   justify-content: center;
   align-items: center;
 
-  /* background-image: linear-gradient(
-      rgba(14, 14, 95, 0.5),
-      rgba(162, 100, 12, 0.5)
-    ),
-    url(./images/books_background.png); */
-
   background-image: linear-gradient(
       rgba(14, 14, 95, 0.5),
       rgba(162, 100, 12, 0.5)
