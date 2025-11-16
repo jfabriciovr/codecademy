@@ -3,6 +3,11 @@ function generateRandomNumber(num) {
   return Math.floor(Math.random() * num);
 }
 
+function formatWisdom(wisdom) {
+  const formatted = wisdom.join("\n");
+  console.log(formatted);
+}
+
 // Define an object with all the possibilities to choose randomly
 const collectiveWisdom = {
   signInfo: ["star", "moon", "sun", "comet"],
@@ -12,17 +17,25 @@ const collectiveWisdom = {
 // Store the 'wisdom' in an array
 // This is what will be outputed in the terminal
 let personalWisdom = [];
-
 // Iterate over the object
-for (let prop in collectiveWisdom) {
+for (let key in collectiveWisdom) {
   // generates a random number between the elements of the arrays
-  let optionIdx = generateRandomNumber(collectiveWisdom[prop].length);
+  let optionIdx = generateRandomNumber(collectiveWisdom[key].length);
 
   //use object's properties to customize the message being added to personalWisdom
-  switch(prop) {
+  switch(key) {
     case "signInfo":
-      personalWisdom.push
+      personalWisdom.push(`Your sign right now is a "${collectiveWisdom[key][optionIdx]}".`);
+      break;
+    case "fortuneOutput":
+      personalWisdom.push(`You are having: "${collectiveWisdom[key][optionIdx]}"`);
+      break;
+    case "advice":
+      personalWisdom.push(`You should: "${collectiveWisdom[key][optionIdx]}"`);
+      break;
+    default:
+      personalWisdom.push("There is not enough info.");
   }
-  console.log(collectiveWisdom[prop][optionIdx]);
-
 }
+
+formatWisdom(personalWisdom);
