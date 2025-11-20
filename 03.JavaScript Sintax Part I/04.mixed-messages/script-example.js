@@ -6,7 +6,7 @@ function generateRandomNumber(num) {
 const collectiveWisdom = {
   signInfo: ["star", "moon", "sun", "comet"],
   fortuneOutput: [
-    "terrible luck",
+    "awful luck",
     "bad luck",
     "ok luck",
     "good luck",
